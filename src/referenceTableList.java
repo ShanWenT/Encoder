@@ -11,6 +11,7 @@ public class referenceTableList {
 	
 	private HashMap<Integer, Character> referenceTable = new HashMap<>();
 	
+	public static boolean invalidOffset;
 		
 
 	public List<Character> getReferenceTableList() {

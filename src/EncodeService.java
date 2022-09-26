@@ -43,7 +43,11 @@ public class EncodeService implements Encoder {
 			offSetInt = referenceTableList.indexOf(offSetChar);
 //			System.out.println(offSetInt);
 		} else
+		{
+			rtl.invalidOffset=true;
 			return "Invalid OffSet";
+		}
+			
 
 		for (int i = 0; i < plainText.length(); i++) {
 			encodeKeys.add(i, referenceTableList.indexOf(plainText.charAt(i)));

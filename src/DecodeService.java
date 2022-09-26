@@ -16,6 +16,7 @@ public class DecodeService implements Decoder {
 
 		Integer offSetInt;
 		StringBuilder decodeText = new StringBuilder();
+		
 
 		for (Character values : referenceTableList) {
 			referenceTable.put(index, values);

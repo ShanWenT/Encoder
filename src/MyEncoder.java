@@ -17,11 +17,19 @@ public class MyEncoder {
 		Decoder decode = new DecodeService();
 		
 		encodedText = encode.encode(plainText);
+		if(referenceTableList.invalidOffset) {
+			System.out.println(encodedText);
+			sc.close();
+			return;
+		}
+			
 		decodedText = decode.decode(encodedText);
 		System.out.print("Encoded Text: ");
 		System.out.println(encodedText);
 		System.out.print("Decoded Text: ");
 		System.out.println(decodedText);
+		
+		sc.close();
 		
 		
 		
