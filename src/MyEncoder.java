@@ -10,14 +10,14 @@ public class MyEncoder {
 		String encodedText="";
 		String decodedText="";
 		System.out.println("Enter input text :");
-		plainText += sc.nextLine().toUpperCase();
+		plainText = sc.nextLine().toUpperCase();
 		
 		
 		Encoder encode = new EncodeService();
 		Decoder decode = new DecodeService();
 		
 		encodedText = encode.encode(plainText);
-		if(referenceTableList.invalidOffset) {
+		if(Table.invalidOffset) {
 			System.out.println(encodedText);
 			sc.close();
 			return;

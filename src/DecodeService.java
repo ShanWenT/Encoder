@@ -7,7 +7,7 @@ public class DecodeService implements Decoder {
 	@Override
 	public String decode(String encodedText) {
 
-		referenceTableList rtl = new referenceTableList();
+		Table rtl = new Table();
 		List<Character> referenceTableList = rtl.getReferenceTableList();
 		HashMap<Integer, Character> referenceTable = rtl.getReferenceTable();
 		List<Integer> decodeKeys = new ArrayList<Integer>();
